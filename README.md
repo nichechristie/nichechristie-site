@@ -15,6 +15,9 @@ My journey is unconventional. I went from Playboy Golf tournaments to the US Att
 ![Playboy Era](images/mansion-door.jpg)
 *The Playboy Mansion days*
 
+![Professional](images/lawyer-1.jpg)
+*The professional era*
+
 ![Transformation](images/paint-splatter-1.jpg)
 *Chaos made beautiful - just like code*
 
