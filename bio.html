@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Story | Nichole Christie</title>
+  <meta name="description" content="The full story of Nichole Christie - from chaos to code.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+  <style>
+    .story-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin: 1.5rem auto;
+      display: block;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .story-image-wide {
+      max-width: 600px;
+    }
+    .story-image-small {
+      max-width: 300px;
+    }
+    .image-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .image-row img {
+      width: calc(50% - 0.5rem);
+      min-width: 200px;
+      max-width: 350px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .image-caption {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-style: italic;
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+    }
+    .float-right {
+      float: right;
+      margin: 0 0 1rem 1.5rem;
+      max-width: 280px;
+    }
+    .float-left {
+      float: left;
+      margin: 0 1.5rem 1rem 0;
+      max-width: 280px;
+    }
+    @media (max-width: 600px) {
+      .float-right, .float-left {
+        float: none;
+        margin: 1.5rem auto;
+        max-width: 100%;
+      }
+      .image-row img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-animation"></div>
+
+  <nav>
+    <div class="logo">NC</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="bio.html">My Story</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="bio-header">
+      <h1>The Charmed One</h1>
+      <p class="lead">Mountains. Desert. Beach. A life written in three landscapes.</p>
+
+      <!-- Audio Narration Button -->
+      <div style="margin-top: 1.5rem;">
+        <button onclick="toggleAudio()" id="audioBtn" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+          <svg id="playIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          <svg id="pauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          <span id="audioText">Listen to My Story</span>
+        </button>
+        <audio id="storyAudio" src="audio/story-narration.mp3"></audio>
+      </div>
+
+      <script>
+        const audio = document.getElementById('storyAudio');
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+        const audioText = document.getElementById('audioText');
+
+        function toggleAudio() {
+          if (audio.paused) {
+            audio.play();
+            playIcon.style.display = 'none';
+            pauseIcon.style.display = 'block';
+            audioText.textContent = 'Pause';
+          } else {
+            audio.pause();
+            playIcon.style.display = 'block';
+            pauseIcon.style.display = 'none';
+            audioText.textContent = 'Listen to My Story';
+          }
+        }
+
+        audio.onended = function() {
+          playIcon.style.display = 'block';
+          pauseIcon.style.display = 'none';
+          audioText.textContent = 'Listen to My Story';
+        };
+      </script>
+    </header>
+
+    <article class="bio-content">
+
+      <p>I was born in the mountains of upstate New York in 1985. When I was still a baby, my parents hitchhiked through the desert to Las Vegas, eventually settling by Lake Mead with nothing but each other and whatever they could carry. My sister arrived two years later—born in the backseat of a taxi cab on a Vegas street. People always compared me to Marilyn Monroe—Hugh Hefner himself told me I reminded him of her and Anna Nicole Smith, because I was "so much fun and had a trashy childhood." Blonde, unconventional, a life that read like fiction.</p>
+
+      <p>My father went to prison. When he got out, addiction had taken hold of him, and he became violent with my mother. She escaped when I was three, and we fled to Florida to live with my grandparents. Years later, my mother met my stepfather. By the time I was ten, I had a new sister—born by the beach. Me from the mountains, one sister from the desert, one from the ocean. My mother started calling us "The Charmed Ones," like those witch sisters from television. Three daughters, three elements, one fractured but unbreakable bond.</p>
+
+      <div class="pull-quote">
+        "I've learned that the universe doesn't give you the life you expect. It gives you the life that makes you who you need to become."
+      </div>
+
+      <h2>Survival</h2>
+
+      <p>My stepfather was a good man—until crack cocaine found him. The addiction transformed him into someone I didn't recognize. The abuse drove me out of the house at sixteen. We had just moved to Arkansas, his home state, when I couldn't take it anymore. I moved to Massachusetts to live with my aunt. She gave me stability for the rest of high school, though she was more roommate than parent. When I turned eighteen, I was on my own.</p>
+
+      <p>Today, my stepfather is a healed man. He doesn't remember most of the abuse—his mind has blocked it out. He's now the good father he couldn't be when I was little. Recovery is possible. People can change.</p>
+
+      <p>What people don't understand is that survival isn't pretty. I started dancing at bachelor parties in Boston. My mother had been a stripper too—it was the family trade when options were limited. But dancing in Boston brought me into contact with worlds I never expected. I met the Kraft family. I met the Winklevoss twins at a birthday party they threw for their father—he freaked out when he saw they'd hired dancers, so they just paid us to hang out. We ended up smoking a blunt in their mainframe room. Years later, they'd become Bitcoin billionaires. At the time, they were just two tall guys who didn't know how their dad would react to strippers.</p>
+
+      <h2>The Modeling Years</h2>
+
+      <p>I'd started modeling at six years old with my grandmother in Florida, then again at eleven doing runway work for Limited Too. The industry came naturally to me—people always said I had that Marilyn Monroe quality, a magnetism that photographs couldn't quite capture but everyone could feel.</p>
+
+      <p>When I was twenty-one, a stranger messaged me on Myspace claiming to be a Playboy model scout. I assumed it was bullshit, but the free VIP party invitation was real enough. I brought a friend as backup, expecting nothing. Instead, I walked into an actual Playboy event with actual Playmates. That night changed the trajectory of my twenties.</p>
+
+      <div class="image-row">
+        <img src="images/mansion-door.jpg" alt="At the Playboy Mansion door">
+        <img src="images/mansion-fountain.jpg" alt="The famous mansion fountain" style="object-position: top;">
+      </div>
+      <p class="image-caption">The Playboy Mansion — I couldn't believe this was my life</p>
+
+      <p>I worked the Playboy Golf "Girls of Golf" tournaments. I attended Hef's private parties at the mansion in California. I tested for Playmate and got a callback—they were ready to sign me for a $25,000 shoot.</p>
+
+      <div class="image-row">
+        <img src="images/playboy-golf-event.jpg" alt="Playboy Golf event">
+        <img src="images/playboy-golf-girls.jpg" alt="Girls of Golf">
+      </div>
+
+      <div class="image-row">
+        <img src="images/playboy-golf-course.jpg" alt="On the golf course">
+        <img src="images/playboy-tv.jpg" alt="Playboy TV shoot">
+      </div>
+      <p class="image-caption">Girls of Golf tournaments and Playboy TV</p>
+
+      <p>Then my stepfather and his friends started joking about putting my poster on their wall, and something in me shut down. I declined the deal. I never published. I walked away from that world at twenty-five, pregnant with my first daughter.</p>
+
+      <div class="image-row">
+        <img src="images/mansion-party.jpg" alt="Mansion party with celebrities">
+        <img src="images/with-ron-jeremy.jpg" alt="Mansion party">
+      </div>
+      <p class="image-caption">Mansion parties — that's Tara Reid and Corey Feldman on the left</p>
+
+      <h2>The Dark Chapters</h2>
+
+      <p>I could write a book about what happened next—the stalkers, the FBI intersections, the brushes with danger that seemed to follow me like a shadow. A stalker at Bridgewater State College terrorized me so badly that I called my uncle in Florida. He was an Outlaw—as in the Outlaws Motorcycle Club, a 1%er organization. He connected me with club members in Massachusetts who let me move in for protection.</p>
+
+      <p>Living with the Outlaws meant having a "probate" assigned to me—that's what they call a prospect, someone trying to earn their way into the club. He became my personal bodyguard, doing whatever my friends told him to do. It was an unusual life, but I felt safe for the first time in months.</p>
+
+      <img src="images/bike-wash.jpg" alt="Hells Angels bike wash" class="story-image float-right story-image-small">
+
+      <p>Then I met Eric—a Hells Angel. If you know anything about motorcycle clubs, you know the Outlaws and Hells Angels are blood rivals. They've been at war for decades. Dating Eric was forbidden. My family's club would have killed us both if they found out. I did it anyway, and that man's influence stays with me still.</p>
+
+      <p>Back at the Outlaws' house, things fell apart. The probate who'd been protecting me got patched in, and his old lady got jealous of our phone calls. He convinced the club to "86" me—that means you're dead to them, forbidden from any contact. They threw my computer out on the porch during finals week. It rained. I lost all my work and failed out of school.</p>
+
+      <p>A week later, the FBI raided everything. That same probate had been an undercover cop the entire time. He'd had me 86'd to get me out before the bust. There had been a kilo of cocaine and a machine gun in my apartment. My roommates went to prison. I never knew any of it was there. The cop saved my life by making me an outcast.</p>
+
+      <div style="clear: both;"></div>
+
+      <p>Another stalker called me while I stood near a rose bush and told me the flowers near me were pretty. He said he didn't want to have sex with me anymore—he wanted to run his hands through my intestines. I changed my number. I moved. I kept moving.</p>
+
+      <p>My father died from a morphine overdose. In my grief, I tried to follow him. I snorted a gram and a half of heroin—my first and last time—trying to die. Instead, I fell into a coma. In that space between life and death, I saw my father and my grandfather in something that felt like limbo. They didn't want me there. I came back.</p>
+
+      <img src="images/wedding.jpg" alt="Wedding day" class="story-image">
+      <p class="image-caption">I got married and started a family</p>
+
+      <p>At twenty-eight, I had a stroke. I developed secondary epilepsy. I became a mother of four. My husband's jealousy and the courts' confusion over my "associations" made co-parenting warfare. I lost my house—bought from a preacher who faked the owner financing on a property the bank actually owned. Seven years of payments, gone. A billionaire I met through work drugged my wine and assaulted me; I didn't remember until lawyers showed up years later with a sex trafficking case.</p>
+
+      <h2>The Legal Chapter</h2>
+
+      <p>Somewhere in the chaos, I worked as a lawyer. I studied under John Wesley Hall's license and took on a federal case. My friend Johnny Verducci owed the IRS nearly a million dollars. I met with the US Attorney's Office, the FBI, and the IRS in a sitdown.</p>
+
+      <img src="images/lawyer-1.jpg" alt="As a lawyer" class="story-image">
+      <p class="image-caption">The lawyer era</p>
+
+      <p>I felt so starstruck—walking into that federal building was cooler than going to the Playboy mansion. So much security. I got my friend out of trouble and his money back.</p>
+
+      <h2>The Transformation</h2>
+
+      <p>In 2020, I invested in Wrapped Ethereum and promptly lost access to my wallet. Then I received a scam email claiming I had crypto to claim. Most people would have deleted it. I got curious.</p>
+
+      <div class="pull-quote">
+        "Crypto didn't just change what I do. It changed who I am."
+      </div>
+
+      <p>I knew basic Java from when I was a teenager, but I'd never seriously coded. Crypto was different. It wasn't just money—it was software. It wasn't just a ledger—it was a new digital space, a new way to process reality. I was obsessed. I taught myself TypeScript, then Solidity, then Rust. I started building. Every question led to ten more. Every project led to something bigger.</p>
+
+      <p>I discovered quantum computing and saw immediately how it connected to cryptography, to blockchain consensus, to everything I was building. I started running experiments across IBM Quantum, IonQ, Rigetti. I orchestrated 803 qubits across twelve quantum computers in four countries. I wrote research papers. I authored EIP specifications for Ethereum. I built a temporal blockchain with 99% energy reduction. I created AI agents that live on quantum infrastructure.</p>
+
+      <div class="image-row">
+        <img src="images/paint-splatter-1.jpg" alt="Art from chaos">
+        <img src="images/paint-splatter-2.jpg" alt="Chaos made beautiful">
+      </div>
+      <p class="image-caption">Chaos made beautiful — just like my code</p>
+
+      <p>Today I have over 580 repositories on GitHub. I went from not knowing what an API was to building the infrastructure that other developers use. I am disabled now—the epilepsy never left—but I am determined to work in software and leave something meaningful behind.</p>
+
+      <h2>Why This Matters</h2>
+
+      <p>Not many women are in this space. Fewer still are ex-Playboy models who taught themselves to code while raising four kids and fighting through disability. I bring a perspective that doesn't exist in most engineering rooms—a life lived in extremes, a mind that learned to find patterns in chaos, and the absolute certainty that if I could survive everything that came before, I can build anything that comes next.</p>
+
+      <img src="images/daffodil-portrait.jpg" alt="Me today" class="story-image">
+      <p class="image-caption">Today — still that Marilyn energy, now building the future</p>
+
+      <p>My mother was right to call us the Charmed Ones. I was born in the mountains, raised by the desert, shaped by the ocean, and transformed by the blockchain. Every element forged something different in me. Now I build.</p>
+
+      <div style="text-align: center; margin-top: 4rem;">
+        <a href="projects.html" class="btn btn-primary">See What I've Built</a>
+        <a href="mailto:Nicholechristie555@gmail.com" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>This story is real. The code is too.</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="mailto:Nicholechristie555@gmail.com">Nicholechristie555@gmail.com</a> ·
+      <a href="https://www.linkedin.com/in/nichole-christie-25565632b/" target="_blank">LinkedIn</a> ·
+      <a href="Nicholes-Crypto-Resume.pdf" target="_blank">Resume</a>
+    </p>
+  </footer>
+</body>
+</html>
