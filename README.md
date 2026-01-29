@@ -20,9 +20,12 @@ My journey is unconventional. I went from Playboy Golf tournaments to the US Att
 
 ## What I Build
 
-- **[LUXBIN Quantum Internet](https://github.com/nichechristie/Luxbin-Quantum-internet)** - Quantum networking stack across 12+ quantum computers
-- **[LUXBIN Chain](https://github.com/mermaidnicheboutique-code/luxbin-chain)** - Temporal blockchain with 99% energy reduction
-- **[NicheAI](https://github.com/mermaidnicheboutique-code/nicheai)** - AI companions powered by quantum computing
+| Project | Description | Live Site | Code |
+|---------|-------------|-----------|------|
+| **LUXBIN Quantum Internet** | Quantum networking stack across 12+ quantum computers in 4 countries | [quantum-internet.vercel.app](https://quantum-internet.vercel.app) | [GitHub](https://github.com/nichechristie/Luxbin-Quantum-internet) |
+| **LUXBIN Light Language** | A new computer language based on light and color wavelengths - binary as a color light show | [luxbin-light-language.vercel.app](https://luxbin-light-language-p2em.vercel.app) | [GitHub](https://github.com/mermaidnicheboutique-code/Luxbin-light-language) |
+| **LUXBIN Chain** | Temporal blockchain with Proof-of-Time consensus achieving 99% energy reduction | [luxbin-app.vercel.app](https://luxbin-app.vercel.app) | [GitHub](https://github.com/mermaidnicheboutique-code/luxbin-chain) |
+| **NicheAI** | AI companions (Aurora & Atlas) powered by quantum computing | [nicheai.vercel.app](https://nicheai-nx5p.vercel.app) | [GitHub](https://github.com/mermaidnicheboutique-code/nicheai) |
 
 ## Links
 
