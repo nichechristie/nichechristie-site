@@ -39,6 +39,7 @@ My journey is unconventional. I went from Playboy Golf tournaments to the US Att
 - Solidity / Rust
 - Python / Qiskit
 - Node.js / GraphQL
+- java script
 
 ## Contact
 
