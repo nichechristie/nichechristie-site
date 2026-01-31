@@ -363,7 +363,7 @@ nav .nav-links a:hover {
   font-family: 'Crimson Pro', serif;
 }
 
-.bio-content p:first-of-type::first-letter {
+.bio-content > p:first-of-type::first-letter {
   font-size: 3.5rem;
   float: left;
   line-height: 1;
